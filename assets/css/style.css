@@ -1,0 +1,69 @@
+:root {
+    --ink: #172033;
+    --brand: #0f766e;
+    --brand-2: #2563eb;
+    --soft: #eef7f5;
+    --line: #dbe5e3;
+}
+
+body {
+    background: #f7faf9;
+    color: var(--ink);
+}
+
+.app-nav {
+    background: linear-gradient(90deg, #0f766e, #1d4ed8);
+}
+
+.hero {
+    background:
+        linear-gradient(120deg, rgba(15, 118, 110, .95), rgba(37, 99, 235, .88)),
+        url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 8px;
+    padding: clamp(2rem, 6vw, 5rem);
+}
+
+.panel {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: 0 14px 40px rgba(23, 32, 51, .06);
+}
+
+.metric {
+    border-left: 4px solid var(--brand);
+}
+
+.question-card {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.timer {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0;
+}
+
+.table thead th {
+    color: #506174;
+    font-size: .82rem;
+    text-transform: uppercase;
+}
+
+.choice-label {
+    display: block;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: .8rem .9rem;
+    cursor: pointer;
+    transition: border-color .15s, background .15s;
+}
+
+.choice-label:hover,
+.form-check-input:checked + .choice-label {
+    border-color: var(--brand);
+    background: var(--soft);
+}
